@@ -2,7 +2,8 @@ NATS Server, NAST Streaming
 ===================
 
 ##Installing
-NATS Server : https://docs.nats.io/nats-server/installation,
+NATS Server : https://docs.nats.io/nats-server/installation
+
 NAST Streaming : https://docs.nats.io/nats-streaming-server/install
 
 ##Getting Started
@@ -47,7 +48,7 @@ POST http://localhost:8080/v1/nats
 GET http://localhost:8080/v1/nats/1
 ~~~
 
-
+##Explain
 ~~~java
 @RequiredArgsConstructor
 @SpringBootApplication
