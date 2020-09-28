@@ -1,12 +1,12 @@
 NATS Server, NAST Streaming
 ===================
 
-##Installing
+## Installing
 NATS Server : https://docs.nats.io/nats-server/installation
 
 NAST Streaming : https://docs.nats.io/nats-streaming-server/install
 
-##Getting Started
+## Getting Started
 #### NAST Server
 ~~~
 Server A
@@ -29,7 +29,7 @@ nats-streaming-server -store file -dir store-b -clustered -cluster_node_id b -cl
 nats-streaming-server  -store file -dir store-c -clustered -cluster_node_id c -cluster_peers a,b -nats_server nats://localhost:6222 &
 ~~~
 
-##Client API
+## Client API
 ~~~
  POST http://localhost:8080/v1/nats/stream
 {
@@ -48,7 +48,7 @@ POST http://localhost:8080/v1/nats
 GET http://localhost:8080/v1/nats/1
 ~~~
 
-##Explain
+## Explain
 ~~~java
 @RequiredArgsConstructor
 @SpringBootApplication
@@ -64,7 +64,7 @@ public class NatsApplication {
 		SpringApplication.run(NatsApplication.class, args);
 	}
 
-    //사용시 주석 해제 
+	//사용시 주석 해제 
 	@EventListener(ApplicationReadyEvent.class)
 	public void natsReady() {
 		//nats();
